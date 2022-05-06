@@ -1,6 +1,5 @@
-# Mage2 Module Tajveez CustomerImport
+# Magento 2 module to Import Customer from different sources using CLI
 
-    ``tajveez/module-customerimport``
 
 -   [Main Functionalities](#markdown-header-main-functionalities)
 -   [Installation](#markdown-header-installation)
