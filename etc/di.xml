@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Framework\Console\CommandList">
+		<arguments>
+			<argument name="commands" xsi:type="array">
+				<item name="CustomerImport" xsi:type="object">Tajveez\CustomerImport\Console\Command\CustomerImport</item>
+				<item name="ProfilesList" xsi:type="object">Tajveez\CustomerImport\Console\Command\ProfilesList</item>
+			</argument>
+		</arguments>
+	</type>
+
+	<!-- Mapper -->
+	<preference for="Tajveez\CustomerImport\Api\MapperInterface" type="Tajveez\CustomerImport\Model\Mapper" />
+	<!-- Mapper -->
+
+	<!-- CSV -->
+	<virtualType name="Tajveez\CustomerImport\Model\Importer\Csv" type="Tajveez\CustomerImport\Model\Importer\Generic">
+		<arguments>
+			<argument name="parser" xsi:type="object">Tajveez\CustomerImport\Model\Parser\CsvParser</argument>
+		</arguments>
+	</virtualType>
+	<!-- CSV -->
+
+	<!-- JSON -->
+	<virtualType name="Tajveez\CustomerImport\Model\Importer\Json" type="Tajveez\CustomerImport\Model\Importer\Generic">
+		<arguments>
+			<argument name="parser" xsi:type="object">Tajveez\CustomerImport\Model\Parser\JsonParser</argument>
+		</arguments>
+	</virtualType>
+	<!-- JSON -->
+</config>
