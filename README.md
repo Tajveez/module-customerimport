@@ -11,6 +11,8 @@
 ## Main Functionalities
 
 Customer Import Module
+PHP v7.4
+Magento v2.4.2
 
 ## Installation
 
@@ -25,15 +27,7 @@ Customer Import Module
 
 ### Type 2: Composer
 
--   Make the module available in a composer repository for example:
-    -   private repository `repo.magento.com`
-    -   public repository `packagist.org`
-    -   public github repository as vcs
--   Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
--   Install the module composer by running `composer require tajveez/module-customerimport`
--   enable the module by running `php bin/magento module:enable Tajveez_CustomerImport`
--   apply database updates by running `php bin/magento setup:upgrade`\*
--   Flush the cache by running `php bin/magento cache:flush`
+-   `composer require tajveez/module-customerimport`
 
 ## Specifications & usage
 
