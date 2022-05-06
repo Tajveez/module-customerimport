@@ -37,4 +37,6 @@ Magento v2.4.2
 
 -   Commands
     -   `php bin/magento customer:import:profile-list` Shows list of all available profiles
-    -   `php bin/magento customer:import sample-json sample.json` Imports sample.json file using sample-json profile
+    -   `php bin/magento customer:import <profile-name> <file-path>` Imports sample.json file using sample-json profile
+        - `profile-name` give available profile name i.e. sample-json, sample-csv      
+        - `file-path` give file path from your magento root directory i.e. `var/sample.json`
