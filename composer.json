@@ -2,6 +2,7 @@
     "name": "tajveez/module-customerimport",
     "description": "Customer Import Module",
     "type": "magento2-module",
+    "version": "1.0.0",
     "license": "GPL-3.0",
     "authors": [
         {
@@ -9,8 +10,10 @@
             "email": "tajveez786@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=7.4",
+        "magento/framework": "102.0.*"
+    },
     "autoload": {
         "files": [
             "registration.php"
