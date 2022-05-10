@@ -26,7 +26,7 @@ Magento v2.4.2
 
 ### Type 2: Composer
 
--   `composer require tajveez/module-customerimport`
+-   `composer require tajveez/module-customerimport @dev`
 
 ## Specifications & usage
 
